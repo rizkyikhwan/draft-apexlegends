@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: ApexLegends;
+  src: url(../font/AgencyFBBold.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ApexLegends;
+  background-color: #dddace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.custom-nav {
+  background-color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.custom-nav .navbar-brand img {
+  width: 73px;
+  height: 47px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  margin-right: 2em;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  -webkit-transition: .3s color ease;
+  transition: .3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: red;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .button-sign-up {
+  display: inline-block;
+  margin-right: 0;
+  padding: 0.25em 1.5em;
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  margin-top: 3px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .button-sign-up:hover {
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+@media (min-width: 992px) {
+  .sticky {
+    padding: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .sticky .navbar-brand img {
+    width: 58px;
+    height: 37px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+.jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  text-align: left;
+  margin-top: 3em;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .jumbotron {
+    background-size: cover;
+    background-position: center;
+    height: 640px;
+  }
+}
+
+.jumbotron .container {
+  margin-top: 10em;
+}
+
+.jumbotron .container img {
+  width: 233;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.jumbotron .container .display-4 {
+  color: white;
+}
+
+.jumbotron .container p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron .container .button-jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.7em 1.5em;
+  color: white;
+  background-color: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jumbotron .container .button-jumbotron:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+  .jumbotron .container .button-jumbotron {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-size: 14px;
+  }
+}
+
+.legends {
+  background-color: #dddace;
+  margin-top: -2em;
+}
+
+.legends .tengah {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.legends h2 {
+  color: black;
+  text-align: center;
+}
+
+.legends p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.legends .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.container-char {
+  width: 87%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-char .thumbnail {
+  width: 25%;
+  margin-bottom: 4em;
+}
+
+.container-char .thumbnail img {
+  width: 100%;
+}
+
+.container-char .thumbnail h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+.container-char .thumbnail p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container-char .thumbnail .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 50px auto;
+  -webkit-transition: .1s ease-out;
+  transition: .1s ease-out;
+}
+
+.container-char .thumbnail .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 992px) {
+  .container-char .thumbnail {
+    width: 50%;
+  }
+  .container-char .thumbnail h2 {
+    font-size: 16px;
+  }
+  .container-char .thumbnail p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container-char .thumbnail {
+    width: 100%;
+  }
+  .container-char .thumbnail h2 {
+    font-size: 18px;
+  }
+  .container-char .thumbnail p {
+    font-size: 14px;
+  }
+  .container-char .thumbnail .icon {
+    width: 40x;
+    height: 40px;
+  }
+}
+
+.container-news {
+  background-image: url(../img/bg-news.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 850px;
+}
+
+.container-news h2 {
+  padding-top: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.container-news .last-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 73%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px auto;
+  height: 550px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-news .last-news .card {
+  width: 350px;
+  background-color: #141414;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 8px solid #da0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-news .last-news .card .card-date {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.container-news .last-news .card .card-date span {
+  text-transform: uppercase;
+  color: #ce0000;
+}
+
+.container-news .last-news .card .card-tittle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container-news .last-news .card .card-text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+}
+
+.container-news .last-news .card img {
+  border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  .container-news .container-news {
+    height: 900px;
+  }
+}
+
+@media (max-width: 672px) {
+  .container-news {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 662px) {
+  .container-news {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-news {
+    height: 250vh;
+  }
+}
+
+.container-about {
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+
+.container-about h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.container-about .tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  width: 60%;
+  margin: auto;
+}
+
+.container-about .card-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: auto;
+  width: 70%;
+}
+
+.container-about .card-about .container-card {
+  padding: 15px;
+  text-align: center;
+}
+
+.container-about .card-about img {
+  width: 100%;
+}
+
+.container-about .card-about .sub-tittle {
+  padding: 15px;
+}
+
+.container-about .card-about .text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .container-about h2 {
+    font-size: 28px;
+  }
+  .container-about .tittle {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
